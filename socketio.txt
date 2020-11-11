@@ -1,0 +1,56 @@
+-------------------
+socketio
+-------------------
+socketio is a javascript library provides bidirectional communication between\
+client and server.
+two components client side using brower and server side using node.js
+
+web sockets
+------------
+websockets are persitent in connection between client and server and WebSocket 
+protocol facilitates message passing between a client and server.
+
+So, in the best-case scenario, provided that:
+
+the browser supports WebSocket (97% of all browsers in 2020)
+there is no element (proxy, firewall, …) preventing WebSocket connections between the client and the server
+
+
+differnce between websocket and socketio
+
+Key Differences between WebSocket and socket.io
+
+It provides the Connection over TCP while Socket.io is a library to abstract the WebSocket connections. 
+WebSocket doesn't have fallback options while Socket.io supports fallback. WebSocket is technology while Socket.io is a library for WebSockets.
+
+***************************************************************************************************************
+Socket.IO is NOT a WebSocket implementation. Although Socket.IO indeed uses WebSocket as a transport when possible, 
+it adds additional metadata to each packet. That is why a WebSocket client will not be able to successfully connect 
+to a Socket.IO server, and a Socket.IO client will not be able to connect to a plain WebSocket server either.
+****************************************************************************************************************
+
+Features
+Reliability
+Connections are established even in the presence of:
+
+proxies and load balancers.
+personal firewall and antivirus software.
+
+Engine.IO is the implementation of transport-based cross-browser/cross-device bi-directional communication layer for Socket.IO.
+For this purpose, it relies on Engine.IO, which first establishes a long-polling connection, 
+then tries to upgrade to better transports that are “tested” on the side, like WebSocket. 
+
+*Auto-reconnection support*
+
+Disconnection detection
+
+Binary support
+
+The ArrayBuffer object is used to represent a generic, fixed-length raw binary data buffer.
+
+The Blob object represents a blob, which is a file-like object of immutable, raw data; they can be read as text or binary data, or converted into a ReadableStream so its methods can be used for processing the data.
+
+Buffer objects are used to represent a fixed-length sequence of bytes. Many Node.js APIs support Buffers.
+
+The Buffer class is a subclass of JavaScript's Uint8Array class and extends it with methods that cover additional use cases. Node.js APIs accept plain Uint8Arrays wherever Buffers are supported as well.
+
